@@ -17,7 +17,10 @@
 
 <body>
     @include('partials.header')
-    @include('partials.movie')
+    <main>
+        @yield('main')
+    </main>
+    @include('partials.footer')
 </body>
 
 </html>
