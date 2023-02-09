@@ -1,1 +1,146 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+$main-color: #0282f9;
+$footer-bottom-bg: #303030;
+
+ul {
+    list-style-type: none;
+
+}
+
+header {
+    height: 85px;
+
+    img {
+        width: 65px;
+    }
+
+    nav {
+        font-size: .8rem;
+        text-transform: uppercase;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        gap: 1.5rem;
+        font-weight: 500;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 4px solid transparent;
+
+            &.active {
+                color: $main-color;
+                border-bottom: 4px solid $main-color;
+            }
+        }
+    }
+}
+
+//============hero ==========
+.hero {
+    height: 300px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: top;
+    }
+}
+
+//=========== main ===============
+#cards {
+    padding: 1rem 2rem;
+}
+
+
+//=========== card ===============
+.card {
+    width: 100%;
+    aspect-ratio: 1;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+// ========= footer ============
+
+footer {
+    .footer-top {
+        background-image: url('../assets/images/footer-bg.jpg');
+        padding: 1.5rem 0;
+    }
+
+    li {
+        color: white;
+
+        h3 {
+            padding: .8rem 0 .2rem;
+        }
+
+        & a {
+            color: white;
+            font-size: .8rem;
+            font-weight: 300;
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .footer-bottom {
+        height: 80px;
+        display: flex;
+        background-color: $footer-bottom-bg;
+    }
+
+    .footer-left>button {
+        background-color: transparent;
+        border: 2px solid $main-color;
+
+        a {
+            color: white;
+        }
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        height: 30px;
+    }
+
+    .social-network {
+        display: flex;
+        gap: 1rem;
+
+        h3 {
+            color: $main-color;
+        }
+    }
+}
