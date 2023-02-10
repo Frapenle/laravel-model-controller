@@ -66,6 +66,11 @@ main {
     height: calc(100vh - 160px);
 }
 
+#movie {
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+}
+
 #cards {
     padding: 1rem 2rem;
 }
